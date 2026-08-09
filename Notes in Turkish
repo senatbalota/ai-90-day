@@ -1,0 +1,31 @@
+Gün 1
+
+Ollama'yı bilgisayarımıza kurduk.
+Qwen3 AI modelini bilgisayarımıza indirdik.
+Ollama üzerinden Qwen3 modelini yerel olarak çalıştırdık.
+Ollama'nın localhost:11434 üzerinden yerel API sunduğunu öğrendik.
+AI modeli, Ollama ve API arasındaki temel ilişkiyi öğrendik.
+Python'u Ollama ile kullanabilmek için ollama Python paketini kurduk.
+Python üzerinden Ollama'ya bağlanmanın temelini oluşturduk.
+
+Gün 2
+
+Python ile Ollama üzerinden Qwen3'e mesaj gönderdik.
+Kullanıcıdan mesaj alan basit bir chatbot oluşturduk.
+messages listesinin konuşma geçmişini tutmak için kullanıldığını öğrendik.
+user ve assistant mesajlarının konuşma geçmişindeki rolünü gördük.
+AI'ın önceki mesajları kullanarak sorulara cevap verebildiğini test ettik.
+Yerel AI modelinin küçük olması nedeniyle bazı cevaplarda bağlamı yanlış yorumlayabildiğini gözlemledik.
+Chatbotumuzu Git ile takip etmeye başladık.
+İlk commit'imizi oluşturduk ve GitHub'a gönderdik.
+
+Gün 3
+
+AI'a belirli bir görev verdik.
+AI çıktısını JSON olarak almaya çalıştık.
+json.loads() ile JSON'u Python dictionary'ye çevirdik.
+AI çıktısının her zaman güvenilir/aynı yapıda olmadığını gördük.
+KeyError ve TypeError hatalarını gerçek bir problem üzerinden debug ettik.
+AI çıktısını ai_message üzerinden yakaladık.
+Python ile çıktıyı ai_output.txt dosyasına kaydettik.
+GitHub'a projemizin ilerlemesini kaydettik.
