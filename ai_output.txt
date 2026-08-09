@@ -1,0 +1,13 @@
+{
+  "dimensions": "180 cm wide",
+  "materials": "Oak finish",
+  "finish": "Oak finish",
+  "hardware": "Hardware required for mounting and installation",
+  "mounting": "Mounting system with wall support",
+  "manufacturing_requirements": "Manufacturing process including assembly, calibration, and quality checks",
+  "missing_information": [
+    "Additional hardware specifications",
+    "Mounting hardware details",
+    "Mounting requirements"
+  ]
+}
