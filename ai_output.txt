@@ -1,13 +1,1 @@
-{
-  "dimensions": "180 cm wide",
-  "materials": "Oak finish",
-  "finish": "Oak finish",
-  "hardware": "Hardware required for mounting and installation",
-  "mounting": "Mounting system with wall support",
-  "manufacturing_requirements": "Manufacturing process including assembly, calibration, and quality checks",
-  "missing_information": [
-    "Additional hardware specifications",
-    "Mounting hardware details",
-    "Mounting requirements"
-  ]
-}
+{"dimensions": {"width": "200 cm", "height": "missing", "depth": "missing"}, "materials": "walnut", "finish": "wood", "number_of_drawers": 3, "number_and_type_of_shelves": "two open shelves"}

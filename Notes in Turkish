@@ -29,3 +29,13 @@ KeyError ve TypeError hatalarını gerçek bir problem üzerinden debug ettik.
 AI çıktısını ai_message üzerinden yakaladık.
 Python ile çıktıyı ai_output.txt dosyasına kaydettik.
 GitHub'a projemizin ilerlemesini kaydettik.
+
+Gün 4'ün özeti
+AI'a verilen promptun modelin davranışını değiştirdiğini gözlemledik.
+Modelin müşteri tarafından verilmeyen bilgileri uydurabildiğini gördük.
+Prompt ile modelin davranışını sınırlandırdık.
+AI'ın bazı bilgileri atlayabildiğini gözlemledik.
+Promptu daha açık hale getirerek eksik bilgileri ve müşteri taleplerini daha doğru çıkarmasını sağladık.
+Prompt engineering'in temel mantığını öğrendik.
+AI çıktısının tamamen güvenilir olmadığını ve kontrol edilmesi gerektiğini gördük.
+AI + Python + JSON yapısını geliştirmeye devam ettik.
