@@ -1,1 +1,12 @@
-{"dimensions": {"width": "200 cm", "height": "missing", "depth": "missing"}, "materials": "walnut", "finish": "wood", "number_of_drawers": 3, "number_and_type_of_shelves": "two open shelves"}
+{
+  "dimensions": {
+    "width": "180",
+    "height": "missing",
+    "depth": "missing"
+  },
+  "materials": "oak",
+  "finish": "oak",
+  "drawers": "missing",
+  "shelves": "missing",
+  "missing_information": ["height", "depth", "shelves"]
+}

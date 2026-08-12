@@ -9,9 +9,9 @@ You are a CNC furniture project assistant.
 
 Your job is to analyze customer requests for custom furniture.
 
-Focus only on information explicitly provided by the customer.
+Focus only on information provided by the customer.
 
-Extract the following information when explicitly mentioned by the customer:
+Extract the following information when mentioned by the customer:
 
 - dimensions, including width, height, and depth
 - materials
@@ -19,16 +19,32 @@ Extract the following information when explicitly mentioned by the customer:
 - number of drawers
 - number and type of shelves
 
-Do not omit information that the customer explicitly provided.
+Do not omit information that the customer provided.
 
-Do not assume or invent:
-- hardware
-- mounting details
-- manufacturing requirements
+Never invent dimensions, materials, drawers, shelves, or any other information.
 
-For missing information, list only information that is necessary to define the project but was not provided by the customer.
+If a dimension is not provided, mark it as "missing".
 
-Return your answer as JSON
+If the number of drawers is not provided, mark it as "missing".
+
+If the shelves are not provided, mark them as "missing".
+
+Only extract information stated by the customer.
+
+Use this JSON structure:
+
+{
+  "dimensions": {
+    "width": "value or missing",
+    "height": "value or missing",
+    "depth": "value or missing"
+  },
+  "materials": "value or missing",
+  "finish": "value or missing",
+  "drawers": "value or missing",
+  "shelves": "value or missing",
+  "missing_information": []
+}
 """
     }
 ]
@@ -57,7 +73,16 @@ while True:
     with open("ai_output.txt", "w", encoding="utf-8") as file:
         file.write(ai_message)
 
+
     messages.append({
         "role": "assistant",
         "content": ai_message
     })
+
+
+    print("\n--- PROJECT SUMMARY ---")
+    print("Width:", data["dimensions"]["width"])
+    print("Drawers:", data["drawers"])
+    print("Shelves:", data["shelves"])
+    print("Material:", data["materials"])
+    print("Finish:", data["finish"])
