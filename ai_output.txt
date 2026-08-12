@@ -5,10 +5,8 @@
     "depth": "missing"
   },
   "materials": "oak",
-  "finish": "oak",
-  "drawers": "missing",
+  "finish": "missing",
+  "drawers": "2",
   "shelves": "missing",
   "missing_information": ["height", "depth", "shelves"]
 }
-
-I know the output is not correct.

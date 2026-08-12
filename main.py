@@ -70,6 +70,9 @@ while True:
 
     data = json.loads(ai_message)
 
+    print("\n--- MISSING INFORMATION ---")
+
+
     with open("ai_output.txt", "w", encoding="utf-8") as file:
         file.write(ai_message)
 
@@ -79,10 +82,18 @@ while True:
         "content": ai_message
     })
 
-
     print("\n--- PROJECT SUMMARY ---")
     print("Width:", data["dimensions"]["width"])
     print("Drawers:", data["drawers"])
     print("Shelves:", data["shelves"])
     print("Material:", data["materials"])
     print("Finish:", data["finish"])
+
+    if data["missing_information"]:
+         print("\nThis project needs more information:")
+
+         for item in data["missing_information"]:
+              print("-", item)
+
+    else:
+         print("\nAll required information is available.")

@@ -39,3 +39,13 @@ Promptu daha açık hale getirerek eksik bilgileri ve müşteri taleplerini daha
 Prompt engineering'in temel mantığını öğrendik.
 AI çıktısının tamamen güvenilir olmadığını ve kontrol edilmesi gerektiğini gördük.
 AI + Python + JSON yapısını geliştirmeye devam ettik.
+
+Gün 5'te öğrendiklerimiz
+JSON içindeki belirli verilere Python ile eriştik.
+İç içe JSON verilerine data["dimensions"]["width"] şeklinde ulaştık.
+JSON'daki farklı key'leri Python'da kullanmayı öğrendik.
+for döngüsüyle bir listedeki verileri tek tek işledik.
+if ile missing_information listesinin boş olup olmadığını kontrol ettik.
+AI'ın çıktısını Python'un karar mekanizmasında kullandık.
+AI'ın hatalı/eksik çıktı verebileceğini gözlemledik ama uygulamanın geri kalanını çalıştırmaya devam ettik.
+AI + JSON + Python yapısını bir adım daha gerçek bir uygulamaya dönüştürdük.
