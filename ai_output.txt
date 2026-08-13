@@ -8,5 +8,5 @@
   "finish": "oak",
   "drawers": "2",
   "shelves": "missing",
-  "missing_information": ["height", "depth", "shelves"]
+  "missing_information": ["height", "depth"]
 }

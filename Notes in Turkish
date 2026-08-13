@@ -1,59 +1,72 @@
-Gün 1
+# Gün 1
 
-Ollama'yı bilgisayarımıza kurduk.
-Qwen3 AI modelini bilgisayarımıza indirdik.
-Ollama üzerinden Qwen3 modelini yerel olarak çalıştırdık.
-Ollama'nın localhost:11434 üzerinden yerel API sunduğunu öğrendik.
-AI modeli, Ollama ve API arasındaki temel ilişkiyi öğrendik.
-Python'u Ollama ile kullanabilmek için ollama Python paketini kurduk.
-Python üzerinden Ollama'ya bağlanmanın temelini oluşturduk.
+# Ollama'yı bilgisayarımıza kurduk.
+# Qwen3 AI modelini bilgisayarımıza indirdik.
+# Ollama üzerinden Qwen3 modelini yerel olarak çalıştırdık.
+# Ollama'nın localhost:11434 üzerinden yerel API sunduğunu öğrendik.
+# AI modeli, Ollama ve API arasındaki temel ilişkiyi öğrendik.
+# Python'u Ollama ile kullanabilmek için ollama Python paketini kurduk.
+# Python üzerinden Ollama'ya bağlanmanın temelini oluşturduk.
 
-Gün 2
+# Gün 2
 
-Python ile Ollama üzerinden Qwen3'e mesaj gönderdik.
-Kullanıcıdan mesaj alan basit bir chatbot oluşturduk.
-messages listesinin konuşma geçmişini tutmak için kullanıldığını öğrendik.
-user ve assistant mesajlarının konuşma geçmişindeki rolünü gördük.
-AI'ın önceki mesajları kullanarak sorulara cevap verebildiğini test ettik.
-Yerel AI modelinin küçük olması nedeniyle bazı cevaplarda bağlamı yanlış yorumlayabildiğini gözlemledik.
-Chatbotumuzu Git ile takip etmeye başladık.
-İlk commit'imizi oluşturduk ve GitHub'a gönderdik.
+# Python ile Ollama üzerinden Qwen3'e mesaj gönderdik.
+# Kullanıcıdan mesaj alan basit bir chatbot oluşturduk.
+# messages listesinin konuşma geçmişini tutmak için kullanıldığını öğrendik.
+# user ve assistant mesajlarının konuşma geçmişindeki rolünü gördük.
+# AI'ın önceki mesajları kullanarak sorulara cevap verebildiğini test ettik.
+# Yerel AI modelinin küçük olması nedeniyle bazı cevaplarda bağlamı yanlış yorumlayabildiğini gözlemledik.
+# Chatbotumuzu Git ile takip etmeye başladık.
+# İlk commit'imizi oluşturduk ve GitHub'a gönderdik.
 
-Gün 3
+# Gün 3
 
-AI'a belirli bir görev verdik.
-AI çıktısını JSON olarak almaya çalıştık.
-json.loads() ile JSON'u Python dictionary'ye çevirdik.
-AI çıktısının her zaman güvenilir/aynı yapıda olmadığını gördük.
-KeyError ve TypeError hatalarını gerçek bir problem üzerinden debug ettik.
-AI çıktısını ai_message üzerinden yakaladık.
-Python ile çıktıyı ai_output.txt dosyasına kaydettik.
-GitHub'a projemizin ilerlemesini kaydettik.
+# AI'a belirli bir görev verdik.
+# AI çıktısını JSON olarak almaya çalıştık.
+# json.loads() ile JSON'u Python dictionary'ye çevirdik.
+# AI çıktısının her zaman güvenilir/aynı yapıda olmadığını gördük.
+# KeyError ve TypeError hatalarını gerçek bir problem üzerinden debug ettik.
+# AI çıktısını ai_message üzerinden yakaladık.
+# Python ile çıktıyı ai_output.txt dosyasına kaydettik.
+# GitHub'a projemizin ilerlemesini kaydettik.
 
-Gün 4'ün özeti
-AI'a verilen promptun modelin davranışını değiştirdiğini gözlemledik.
-Modelin müşteri tarafından verilmeyen bilgileri uydurabildiğini gördük.
-Prompt ile modelin davranışını sınırlandırdık.
-AI'ın bazı bilgileri atlayabildiğini gözlemledik.
-Promptu daha açık hale getirerek eksik bilgileri ve müşteri taleplerini daha doğru çıkarmasını sağladık.
-Prompt engineering'in temel mantığını öğrendik.
-AI çıktısının tamamen güvenilir olmadığını ve kontrol edilmesi gerektiğini gördük.
-AI + Python + JSON yapısını geliştirmeye devam ettik.
+# Gün 4'ün özeti
+# AI'a verilen promptun modelin davranışını değiştirdiğini gözlemledik.
+# Modelin müşteri tarafından verilmeyen bilgileri uydurabildiğini gördük.
+# Prompt ile modelin davranışını sınırlandırdık.
+# AI'ın bazı bilgileri atlayabildiğini gözlemledik.
+# Promptu daha açık hale getirerek eksik bilgileri ve müşteri taleplerini daha doğru çıkarmasını sağladık.
+# Prompt engineering'in temel mantığını öğrendik.
+# AI çıktısının tamamen güvenilir olmadığını ve kontrol edilmesi gerektiğini gördük.
+# AI + Python + JSON yapısını geliştirmeye devam ettik.
 
-Gün 5'te öğrendiklerimiz
-JSON içindeki belirli verilere Python ile eriştik.
-İç içe JSON verilerine data["dimensions"]["width"] şeklinde ulaştık.
-JSON'daki farklı key'leri Python'da kullanmayı öğrendik.
-for döngüsüyle bir listedeki verileri tek tek işledik.
-if ile missing_information listesinin boş olup olmadığını kontrol ettik.
-AI'ın çıktısını Python'un karar mekanizmasında kullandık.
-AI'ın hatalı/eksik çıktı verebileceğini gözlemledik ama uygulamanın geri kalanını çalıştırmaya devam ettik.
-AI + JSON + Python yapısını bir adım daha gerçek bir uygulamaya dönüştürdük.
+# Gün 5'te öğrendiklerimiz
+# JSON içindeki belirli verilere Python ile eriştik.
+# İç içe JSON verilerine data["dimensions"]["width"] şeklinde ulaştık.
+# JSON'daki farklı key'leri Python'da kullanmayı öğrendik.
+# for döngüsüyle bir listedeki verileri tek tek işledik.
+# if ile missing_information listesinin boş olup olmadığını kontrol ettik.
+# AI'ın çıktısını Python'un karar mekanizmasında kullandık.
+# AI'ın hatalı/eksik çıktı verebileceğini gözlemledik ama uygulamanın geri kalanını çalıştırmaya devam ettik.
+# AI + JSON + Python yapısını bir adım daha gerçek bir uygulamaya dönüştürdük.
 
-Gün 6 özeti
-AI çıktısındaki eksik bilgileri Python ile işledik.
-for döngüsüyle eksik bilgileri tek tek dolaştık.
-if / elif kullanarak farklı eksik bilgiler için farklı sorular oluşturduk.
-== operatörüyle değişkenin değerini kontrol ettik.
-AI çıktısını Python'un karar mekanizmasına bağladık.
-Müşteri taleplerini analiz eden sistemimizi daha otomatik hale getirdik.
+# Gün 6 özeti
+# AI çıktısındaki eksik bilgileri Python ile işledik.
+# for döngüsüyle eksik bilgileri tek tek dolaştık.
+# if / elif kullanarak farklı eksik bilgiler için farklı sorular oluşturduk.
+# == operatörüyle değişkenin değerini kontrol ettik.
+# AI çıktısını Python'un karar mekanizmasına bağladık.
+# Müşteri taleplerini analiz eden sistemimizi daha otomatik hale getirdik.
+
+# Gün 7 Özeti
+# if / elif / else ile koşullu kararlar verdik.
+# and ile birden fazla koşulu birleştirdik.
+# AI çıktısına göre project status oluşturmaya başladık.
+# def ile kendi fonksiyonlarımızı oluşturmaya geri döndük.
+# Fonksiyonlara data göndermeyi öğrendik.
+# return ile fonksiyondan sonuç döndürdük.
+# check_project_status() fonksiyonunu oluşturduk.
+# generate_questions() fonksiyonunu oluşturduk.
+# generate_summary() fonksiyonunu oluşturduk.
+# Büyük kodu görevlere ayrılmış küçük fonksiyonlara bölmeye başladık.
+# # break ile ilgili küçük bir davranış problemi keşfettik ve bunu daha sonra düzelteceğiz.

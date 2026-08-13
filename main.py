@@ -70,7 +70,6 @@ while True:
 
     data = json.loads(ai_message)
 
-
     with open("ai_output.txt", "w", encoding="utf-8") as file:
         file.write(ai_message)
 
@@ -80,6 +79,7 @@ while True:
         "content": ai_message
     })
 
+def generate_summary(data):
     print("\n--- PROJECT SUMMARY ---")
     print("Width:", data["dimensions"]["width"])
     print("Drawers:", data["drawers"])
@@ -87,16 +87,41 @@ while True:
     print("Material:", data["materials"])
     print("Finish:", data["finish"])
 
+
+generate_summary(data)
+
+def generate_questions(data):
     if data["missing_information"]:
-         print("\n--- QUESTIONS FOR CUSTOMER ---")
+        print("\n--- QUESTIONS FOR CUSTOMER ---")
 
-for item in data["missing_information"]:
-    if item == "height":
-        print("What height would you like for the TV unit?")
-    elif item == "depth":
-        print("What depth would you like for the TV unit?")
-    elif item == "shelves":
-        print("How many shelves would you like?")
-
+        for item in data["missing_information"]:
+            if item == "height":
+             print("What height would you like for the TV unit?")
+            elif item == "depth":
+             print("What depth would you like for the TV unit?")
+            elif item == "shelves":
+             print("How many shelves would you like?")
     else:
          print("\nAll required information is available.")
+
+
+generate_questions(data)
+
+def check_project_status(data):
+    width = data["dimensions"]["width"]
+    material = data["materials"]
+    finish = data["finish"]
+
+    if (
+        width != "missing"
+        and material != "missing"
+        and finish != "missing"
+        and not data["missing_information"]
+    ):
+        return "READY FOR DESIGN"
+    else:
+        return "INCOMPLETE"
+
+project_status = check_project_status(data)
+
+print("\nPROJECT STATUS:", project_status)
