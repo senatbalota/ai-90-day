@@ -49,3 +49,11 @@ if ile missing_information listesinin boş olup olmadığını kontrol ettik.
 AI'ın çıktısını Python'un karar mekanizmasında kullandık.
 AI'ın hatalı/eksik çıktı verebileceğini gözlemledik ama uygulamanın geri kalanını çalıştırmaya devam ettik.
 AI + JSON + Python yapısını bir adım daha gerçek bir uygulamaya dönüştürdük.
+
+Gün 6 özeti
+AI çıktısındaki eksik bilgileri Python ile işledik.
+for döngüsüyle eksik bilgileri tek tek dolaştık.
+if / elif kullanarak farklı eksik bilgiler için farklı sorular oluşturduk.
+== operatörüyle değişkenin değerini kontrol ettik.
+AI çıktısını Python'un karar mekanizmasına bağladık.
+Müşteri taleplerini analiz eden sistemimizi daha otomatik hale getirdik.
