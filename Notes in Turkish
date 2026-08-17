@@ -1,3 +1,5 @@
+#Kullandığımız komut : I need a 180 cm wide wall-mounted TV unit with two drawers and oak finish.
+
 # Gün 1
 
 # Ollama'yı bilgisayarımıza kurduk.
@@ -70,3 +72,11 @@
 # generate_summary() fonksiyonunu oluşturduk.
 # Büyük kodu görevlere ayrılmış küçük fonksiyonlara bölmeye başladık.
 # # break ile ilgili küçük bir davranış problemi keşfettik ve bunu daha sonra düzelteceğiz.
+
+# Fonksiyonlara veri göndermeyi pekiştirdik.
+# return ile veri döndürdük.
+# append() ile liste oluşturduk.
+# generate_questions() fonksiyonunu veri döndürecek şekilde düzenledik.
+# generate_summary() fonksiyonunu veri döndürecek şekilde düzenledik.
+# Fonksiyonun veri üretmesi ile ana programın veriyi göstermesi arasındaki farkı öğrendik.
+# Aynı verinin ileride terminal, TXT, JSON veya başka sistemlerde kullanılabileceği yapıya geçtik.
